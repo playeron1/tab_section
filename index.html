@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Section</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="tab-card" aria-labelledby="page-title">
+      <p class="eyebrow">JavaScript practice</p>
+      <h1 id="page-title">Explore the tabs</h1>
+
+      <div class="tabs" role="tablist" aria-label="Content sections">
+        <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview" data-tab="overview">
+          Overview
+        </button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-details" id="tab-details" data-tab="details">
+          Details
+        </button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-notes" id="tab-notes" data-tab="notes">
+          Notes
+        </button>
+      </div>
+
+      <div class="tab-panels">
+        <article class="tab-panel is-visible" role="tabpanel" tabindex="0" id="panel-overview" aria-labelledby="tab-overview" data-panel="overview">
+          <h2>A simple starting point</h2>
+          <p>This page is wired with semantic HTML, responsive CSS, and vanilla JavaScript.</p>
+        </article>
+        <article class="tab-panel" role="tabpanel" tabindex="0" id="panel-details" aria-labelledby="tab-details" data-panel="details" hidden>
+          <h2>Built for practice</h2>
+          <p>Use the tab buttons to practice state changes, accessibility attributes, and DOM selection.</p>
+        </article>
+        <article class="tab-panel" role="tabpanel" tabindex="0" id="panel-notes" aria-labelledby="tab-notes" data-panel="notes" hidden>
+          <h2>Ready to extend</h2>
+          <p>Add more panels, animations, or data-driven content as your exercise grows.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
